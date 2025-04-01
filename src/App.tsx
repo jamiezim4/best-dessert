@@ -5,7 +5,7 @@ import {useState} from "react";
 import CollectUser from "./components/CollectUser.tsx";
 
 function App() {
-    const [username, setUsername] = useState<string>("Jamie");
+    const [username, setUsername] = useState<string | null>(null);
 
     const handleChange = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === "Enter" && e.target instanceof HTMLInputElement) {

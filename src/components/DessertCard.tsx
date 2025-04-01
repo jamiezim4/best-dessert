@@ -5,7 +5,7 @@ interface DessertCardProps {
     name: string
 }
 const DessertCard = ({name}: DessertCardProps) => {
-    const imagePath = `/src/assets/${name.replaceAll(" ", "-").toLowerCase()}.jpg`
+    const imagePath = `/${name.replaceAll(" ", "-").toLowerCase()}.jpg`
     return (
         <Card
             className={"dessertCard"}
